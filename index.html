@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>CONVERSOR DE MONEDAS NACIONAL</h1>
+        <div class="card">
+            <div class="clp">
+                <h2>Pesos CLP</h2>
+                <input type="number" name="clpAmount" id="clpAmount" placeholder="Ingresa el monto en CLP" onkeydown="validateInput(event)">
+            </div>
+
+            <div class="convert">
+                <label for="currencies">Moneda a convertir:</label>
+                <select name="currencies" id="currencies">
+                </select>
+                <input type="button" value="Convertir" id="convert">
+
+            
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <p>Debes rellenar todos los campos.</p>
+                        <input type="button" value="OK" id="OK">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="loader">
+                <p id="answer">...</p>
+                <p id="valueOfDay"></p>
+            </div>
+
+            <div class="chart">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+
+        <div class="error">
+            <p class="errorMessage">MENSAJE DE ERROR</p>
+        </div>
+    </div>
+
+
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>

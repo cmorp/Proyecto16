@@ -1,0 +1,125 @@
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    padding-top: 1rem;
+    color: #ffffff;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 50px;
+    padding: 10px;
+    background-color: black;
+}
+
+h1 {
+    padding-bottom: 5rem;
+}
+
+.convert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+label {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#clpAmount, 
+#currencies {
+    text-align: center;
+    font-size: 1.3em;
+    width: 50%;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#convert {
+    width: 150px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    font-size: x-large;
+    text-align: center;
+    color: white;
+    background: green;
+}
+
+#answer {
+    font-size: x-large;
+}
+
+#valueOfDay {
+    font-size: medium;
+}
+
+.chart {
+    display: none;
+}
+
+#myChart {
+    width: 500px;
+    height: 300px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.error {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    width: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5); 
+}
+
+.modal-content {
+    position: relative;
+    text-align: center;
+    font-size:larger;
+    width: 30%;
+    margin: 15% auto;
+    padding: 20px;
+    border: 3px solid green;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #303030;
+}
+
+#OK {
+    width: 40%;
+    padding: 2%;
+    border-radius: inherit;
+    color: #ffffff;
+    background-color: green;
+}
